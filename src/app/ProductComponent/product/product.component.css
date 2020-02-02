@@ -1,0 +1,18 @@
+button{
+    width: 225px;
+    margin: 10px;
+}
+
+img{
+    width: 60px;
+}
+
+input{
+   background-color: rgb(41, 113, 247);
+   border: 0px;
+   padding: 10px;
+   margin-left:-10px;
+   margin-right:20px;
+
+
+}

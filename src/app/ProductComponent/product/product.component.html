@@ -1,0 +1,15 @@
+
+<button (click)="addProduct()" style="background-color:green" class="btn btn-primary">Add Product</button>
+
+
+<ng-container *ngFor="let product of productList">
+    <button class="btn btn-primary">
+        <input placeholder="Enter Product Name" class="file-input" (blur)="addName(product)" 
+        (dblclick)="openCategory(product)">
+
+    </button><a (click)="deleteProduct(product)"><img src="/assets/delete-big.jpg" ></a><br>
+</ng-container>
+
+<ng-container *ngIf="categoryValue">
+    <app-data-table></app-data-table>      
+</ng-container>
